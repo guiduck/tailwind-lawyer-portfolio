@@ -1,0 +1,28 @@
+@import-normalize;
+
+@tailwind components;
+
+@layer components {
+  .layout {
+    @apply h-[1400px] min-w-max dark:bg-background bg-slate-100;
+  }
+
+  .top-navigation {
+    @apply flex flex-row justify-end
+    bg-gray-300 dark:bg-background bg-opacity-0
+    w-full h-fit
+    m-0;
+  }
+
+  .top-navigation-icon {
+    @apply text-gray-500 
+    mr-3 ml-4 my-3
+    transition duration-300 ease-in-out
+    hover:text-primary
+    cursor-pointer;
+  }
+
+  .top-navigation-icon:first {
+    @apply ml-auto mr-4;
+  }
+}
